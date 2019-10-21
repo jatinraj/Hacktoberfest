@@ -1,0 +1,98 @@
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link!rel="stylesheet" href="style.css">
+   <!-- icons -->
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <title>Flexbox</title>
+</head>
+<body>
+    
+<div class="container">
+  <div class="border"></div>
+  <div class="line"></div>
+  <div class="line-one"></div>
+   <div class="line-two"></div>
+    <img class="yo" src="./team-one.jpg" alt="" srcset="">
+  <div class="text">
+    <span>WHAT WE DO?</span>
+  </div>
+  <div class="num">
+    <span>01</span>
+  </div>
+  <div class="inner-container">
+  <div class="icon">
+  <ion-icon  class="ico"name="finger-print"></ion-icon>
+  </div>
+
+  <div class="title">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </div>
+   <div class="space"></div>
+   <div class="icon">
+  <ion-icon class="ico" name="link"></ion-icon>
+  </div>
+ 
+  <div class="title">
+     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+  </div>
+
+  <!-- social media -->
+
+  <div class="social">
+    <ul>
+      <li><ion-icon name="logo-facebook"></ion-icon></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon></li>
+                        <li><ion-icon name="logo-twitter"></ion-icon></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon></li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+
+    TweenMax.from(".border", 3, {
+            delay: 1.2,
+            rotation: 90,
+            transformOrigin: "50% 50%",
+            opacity: 0,
+            x: -180,
+            ease: Expo.easeInOut
+            });
+    TweenMax.to(".text", 2 ,{
+       delay:0.5,
+       x:40,
+       opacity:0.8,
+       ease:Expo.easeInOut
+    });
+  TweenMax.to(".social",2,{
+     delay:0.8,
+     x:10,
+     opacity:1,
+     ease:Expo.ease
+  });
+    TweenMax.to(".num",2,{
+       delay:0.3,
+       scale:2,
+       ease:Expo.easeInOut,opacity:0.8
+    });
+TweenMax.to(".yo",2,{
+  delay:1,
+  scale:1.2,
+  ease:Expo.ease,
+  opacity:1
+});
+
+TweenMax.to(".inner-container",2,{
+  delay:1.2,
+  x:50,
+  ease:Expo.easeInOut,
+  opacity:0.8
+});
+
+</script>
+</body>
+</html>
